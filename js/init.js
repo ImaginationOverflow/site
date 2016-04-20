@@ -141,43 +141,58 @@
 
       $('#image-loader').fadeIn();
 
-      var contactName = $('#contactForm #contactName').val();
+    var contactName = $('#contactForm #contactName').val();
       var contactEmail = $('#contactForm #contactEmail').val();
       var contactSubject = $('#contactForm #contactSubject').val();
       var contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
-               '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
+	  contactMessage = contactMessage.replace("\n", "</br>");
 
-      $.ajax({
+	$('#message-warning').fadeIn();
+	$('#message-warning').hide();
+	  
+	  if(!contactName || !contactEmail || !contactMessage || !contactSubject)
+	  {
+		  printContactError("All the fields are mandatory.");
+		  return false;
+	  }
+	  
+	  var params = {
+			name: contactName, 
+			email: contactEmail,
+			message: contactMessage,
+			subject: contactSubject
+		};
+	  emailjs.send("gmail","template_ISnGsErl",params)
+		.then(function(response) 
+		{
+			$('#image-loader').fadeOut();
+			$('#message-warning').hide();
+			$('#contactForm').fadeOut();
+			$('#message-success').fadeIn();   
+		}, 
+		function(err) 
+		{
+			printContactError("Something went wrong\n, if the issue persist, try contact us on the social networks");
+		});
 
-	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
-	      success: function(msg) {
-
-            // Message was sent
-            if (msg == 'OK') {
-               $('#image-loader').fadeOut();
-               $('#message-warning').hide();
-               $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
-            }
-            // There was an error
-            else {
-               $('#image-loader').fadeOut();
-               $('#message-warning').html(msg);
-	            $('#message-warning').fadeIn();
-            }
-
-	      }
-
-      });
+	  
+    
+      
       return false;
    });
 
-
+	
+		
+		
 });
+
+function printContactError(error)
+	{
+			$('#image-loader').fadeOut();
+			$('#message-warning').html(error);
+			$('#message-warning').fadeIn();
+	}
 
 
 
