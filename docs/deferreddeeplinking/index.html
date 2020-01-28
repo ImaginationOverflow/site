@@ -1,0 +1,1023 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A hub to all documentation of ImaginationOverflow Projects">
+      
+      
+        <link rel="canonical" href="https://imaginationoverflow.com/docs/deferreddeeplinking/">
+      
+      
+        <meta name="author" content="ImaginationOverflow - Diogo Cardoso">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Documentation - ImaginationOverflow Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-41424791-27", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#integration" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://imaginationoverflow.com/docs" title="ImaginationOverflow Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../images/logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              ImaginationOverflow Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Documentation
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../universaldeeplinking/" class="md-tabs__link">
+          Universal Deep Linking
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../universalfileassociation/" class="md-tabs__link">
+          Universal File Association
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" class="md-tabs__link md-tabs__link--active">
+          Deferred Deep Linking for Android
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://imaginationoverflow.com/docs" title="ImaginationOverflow Documentation" class="md-nav__button md-logo">
+      
+        <img src="../images/logo.svg" width="48" height="48">
+      
+    </a>
+    ImaginationOverflow Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../universaldeeplinking/" title="Universal Deep Linking" class="md-nav__link">
+      Universal Deep Linking
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../universalfileassociation/" title="Universal File Association" class="md-nav__link">
+      Universal File Association
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="./" title="Deferred Deep Linking for Android" class="md-nav__link">
+      Deferred Deep Linking for Android
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Universal Deep Linking
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Universal Deep Linking
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../universaldeeplinking/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://assetstore.unity.com/packages/slug/125172?aid=1100l8RBa" title="Unity Asset Store" class="md-nav__link">
+      Unity Asset Store
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://assetstore.unity.com/packages/slug/135654?aid=1100l8RBa" title="Unity Asset Store (Pro)" class="md-nav__link">
+      Unity Asset Store (Pro)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://universaldeeplinking.imaginationoverflow.com/docs" title="Documentation" class="md-nav__link">
+      Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://universaldeeplinking.imaginationoverflow.com" title="Site" class="md-nav__link">
+      Site
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://universaldeeplinking.imaginationoverflow.com/test" title="Test Tool" class="md-nav__link">
+      Test Tool
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Universal File Association
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Universal File Association
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../universalfileassociation/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://assetstore.unity.com/packages/slug/155366?aid=1100l8RBa" title="Unity Asset Store" class="md-nav__link">
+      Unity Asset Store
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://assetstore.unity.com/packages/slug/158709?aid=1100l8RBa" title="Unity Asset Store (Pro)" class="md-nav__link">
+      Unity Asset Store (Pro)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://universalfileassociation.imaginationoverflow.com/docs" title="Documentation" class="md-nav__link">
+      Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="http://universalfileassociation.imaginationoverflow.com/" title="Site" class="md-nav__link">
+      Site
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="http://universalfileassociation.imaginationoverflow.com/test" title="Test Tool" class="md-nav__link">
+      Test Tool
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      Deferred Deep Linking for Android
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Deferred Deep Linking for Android
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Documentation
+      </label>
+    
+    <a href="./" title="Documentation" class="md-nav__link md-nav__link--active">
+      Documentation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#integration" class="md-nav__link">
+    Integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caching" class="md-nav__link">
+    Caching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#universal-deep-link-integration" class="md-nav__link">
+    Universal Deep Link Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-referrer-installs" class="md-nav__link">
+    About Referrer Installs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#editor" class="md-nav__link">
+    Editor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device" class="md-nav__link">
+    Device
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://assetstore.unity.com/packages/slug/500736?aid=1100l8RBa" title="Unity Asset Store" class="md-nav__link">
+      Unity Asset Store
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://assetstore.unity.com/packages/500737?aid=1100l8RBa" title="Unity Asset Store (Pro)" class="md-nav__link">
+      Unity Asset Store (Pro)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#integration" class="md-nav__link">
+    Integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caching" class="md-nav__link">
+    Caching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#universal-deep-link-integration" class="md-nav__link">
+    Universal Deep Link Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-referrer-installs" class="md-nav__link">
+    About Referrer Installs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#editor" class="md-nav__link">
+    Editor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device" class="md-nav__link">
+    Device
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Documentation</h1>
+                
+                <p><img alt="logo" src="../imgs/ddllogo.png" /> </p>
+<p><strong>ImaginationOverflow Deferred Deep Linking for Android</strong> is a direct implementation of <a href="https://developer.android.com/google/play/installreferrer/">Google Play Install Referrer API</a>, it enables your unity applications or games to return the install referrer information in order to track installs, give users rewards, etc.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The plugin only works for Play Store Installs</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Due to <a href="https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html">Google annoucement</a>, the plugin doesn't configure the <em>com.android.vending.INSTALL_REFERRER</em> BroadcastReceiver, commonly used to track installs and referrers, since it will be deprecated on March 1, 2020.</p>
+</div>
+<h2 id="integration">Integration<a class="headerlink" href="#integration" title="Permanent link">&para;</a></h2>
+<p>Integrating with the plugin is as simple as registering an event in order to get the information, and call a method to start retrieving the data. This is an asynchronous operation but the plugin ensures that all event handlers are run in the Unity main thread.</p>
+<div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">ImaginationOverflow.AndroidInstallReferrer</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">ImaginationOverflow.AndroidInstallReferrer.JavaInterop</span><span class="p">;</span>
+<span class="p">....</span>
+
+<span class="n">InstallReferrerManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">ReferrerInformationCollected</span> <span class="p">+=</span> <span class="n">Instance_ReferrerInformationCollected</span><span class="p">;</span>
+<span class="n">InstallReferrerManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">FetchInformationCollected</span><span class="p">();</span>
+</pre></div>
+
+<p>In the event handler you have access to all referral information stored by the play store, or in case of an error, the reason for the error and its details:</p>
+<div class="codehilite"><pre><span></span><span class="k">private</span> <span class="k">void</span> <span class="nf">Instance_ReferrerInformationCollected</span><span class="p">(</span><span class="n">InstallReferrerInfo</span> <span class="n">data</span><span class="p">)</span>
+<span class="p">{</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="n">IsNullOrEmpty</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">Error</span><span class="p">)</span> <span class="p">==</span> <span class="k">false</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">LogErrorFormat</span><span class="p">(</span><span class="s">&quot;Deferred Deep Link Error!\n{0}\nIs Exception: {1}&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">.</span><span class="n">Error</span><span class="p">,</span> <span class="n">data</span><span class="p">.</span><span class="n">IsException</span><span class="p">);</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kt">var</span> <span class="n">referrerInfo</span> <span class="p">=</span> <span class="n">data</span><span class="p">.</span><span class="n">InstallReferrer</span><span class="p">;</span>
+    <span class="kt">var</span> <span class="n">referrerTime</span> <span class="p">=</span> <span class="n">data</span><span class="p">.</span><span class="n">ReferrerClickTime</span><span class="p">;</span>
+    <span class="kt">var</span> <span class="n">installTime</span> <span class="p">=</span> <span class="n">data</span><span class="p">.</span><span class="n">InstallTime</span><span class="p">;</span>
+    <span class="kt">var</span> <span class="n">playInstant</span> <span class="p">=</span> <span class="n">data</span><span class="p">.</span><span class="n">GooglePlayInstant</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<h3 id="caching">Caching<a class="headerlink" href="#caching" title="Permanent link">&para;</a></h3>
+<p>The plugin, by default, automatically caches the referrer info after the first data collection, this avoids unnecessary calls to the native API, internally we use <a href="https://docs.unity3d.com/ScriptReference/PlayerPrefs.html">PlayPrefs</a> to store this information. If this behavior is not intended you can deactivate it by setting <strong>CacheReferrerInformation</strong> to <em>false</em> before calling the <em>FetchInformationCollected</em> method.</p>
+<p><div class="codehilite"><pre><span></span><span class="c1">//</span>
+<span class="c1">//  Deactivate caching</span>
+<span class="c1">//</span>
+<span class="n">InstallReferrerManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">CacheReferrerInformation</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+
+<span class="p">(...)</span>
+</pre></div>
+The plugin reads from the PlayPrefs in the static constructor of the InstallReferrerManager class, that means that you can test if there are any cached data before you register your handler and call the <em>FetchInformationCollected</em> method:</p>
+<div class="codehilite"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">InstallReferrerManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">ReferrerInfo</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">//do something</span>
+<span class="p">}</span>
+</pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When caching is <strong>enabled</strong> and cached data is available, the plugin won't query the <em>Google Play Install Referrer API</em>, it will automatically trigger the <strong>ReferrerInformationCollected</strong> event.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On <strong>Unity Editor</strong> the caching feature is <strong>always disabled</strong>, this was made by design to allow continuous testing.</p>
+</div>
+<h3 id="universal-deep-link-integration">Universal Deep Link Integration<a class="headerlink" href="#universal-deep-link-integration" title="Permanent link">&para;</a></h3>
+<p>The plugin also integrates directly with our <a href="https://universaldeeplinking.imaginationoverflow.com/">Universal Deep Link plugin</a>, so if you enable this option the <strong>ReferrerInformationCollected</strong> event won't ever be called, and instead, the <strong>LinkActivated</strong> will.  </p>
+<p>To enable the Universal Deep Link integration, you just need to set <strong>FetchInformationCollected</strong> only argument as true:</p>
+<div class="codehilite"><pre><span></span><span class="n">InstallReferrerManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">FetchInformationCollected</span><span class="p">(</span><span class="n">triggerUniversalDeepLinkEvent</span><span class="p">:</span><span class="k">true</span><span class="p">);</span>
+</pre></div>
+
+<p>The generated link passed to the Universal Deep Link plugin will have the following format:
+<div class="codehilite"><pre><span></span>androidInstallReferrer://info?InstallReferrer={0}&amp;GooglePlayInstant={1}&amp;InstallTime={2}&amp;ReferrerClickTime={3}&amp;Error={4}&amp;IsException={5}
+
+//
+//  {0} - install referrer [URL encoded]
+//  {1} - GooglePlayInstant information
+//  {2} - Install Time [Unix timestamp]
+//  {3} - Referrer Click Time [Unix timestamp]
+//  {4} - Error [URL Encoded]
+//  {5} - Is Exception
+//
+</pre></div></p>
+<p>To retrieve all arguments you can use the following snippet:</p>
+<div class="codehilite"><pre><span></span><span class="k">private</span> <span class="k">void</span> <span class="nf">Instance_LinkActivated</span><span class="p">(</span><span class="n">ImaginationOverflow</span><span class="p">.</span><span class="n">UniversalDeepLinking</span><span class="p">.</span><span class="n">LinkActivation</span> <span class="n">la</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">la</span><span class="p">.</span><span class="n">Uri</span><span class="p">.</span><span class="n">StartsWith</span><span class="p">(</span><span class="s">&quot;androidInstallReferrer&quot;</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="c1">//</span>
+        <span class="c1">//  Deferred activation</span>
+        <span class="c1">//</span>
+        <span class="kt">var</span> <span class="n">installReferrer</span> <span class="p">=</span> <span class="n">WWW</span><span class="p">.</span><span class="n">UnEscapeURL</span><span class="p">(</span><span class="n">la</span><span class="p">.</span><span class="n">QueryString</span><span class="p">[</span><span class="s">&quot;InstallReferrer&quot;</span><span class="p">]);</span>
+        <span class="kt">var</span> <span class="n">playInstant</span> <span class="p">=</span> <span class="kt">bool</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">la</span><span class="p">.</span><span class="n">QueryString</span><span class="p">[</span><span class="s">&quot;GooglePlayInstant&quot;</span><span class="p">]);</span>
+        <span class="kt">var</span> <span class="n">installTime</span> <span class="p">=</span> <span class="kt">long</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">la</span><span class="p">.</span><span class="n">QueryString</span><span class="p">[</span><span class="s">&quot;InstallTime&quot;</span><span class="p">]).</span><span class="n">UnixTimestampToDateTime</span><span class="p">();</span>
+        <span class="kt">var</span> <span class="n">referrerClickTime</span> <span class="p">=</span> <span class="kt">long</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">la</span><span class="p">.</span><span class="n">QueryString</span><span class="p">[</span><span class="s">&quot;ReferrerClickTime&quot;</span><span class="p">]).</span><span class="n">UnixTimestampToDateTime</span><span class="p">();</span>
+        <span class="kt">var</span> <span class="n">error</span> <span class="p">=</span> <span class="n">WWW</span><span class="p">.</span><span class="n">UnEscapeURL</span><span class="p">(</span><span class="n">la</span><span class="p">.</span><span class="n">QueryString</span><span class="p">[</span><span class="s">&quot;Error&quot;</span><span class="p">]);</span>
+        <span class="kt">var</span> <span class="n">isException</span> <span class="p">=</span> <span class="kt">bool</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">la</span><span class="p">.</span><span class="n">QueryString</span><span class="p">[</span><span class="s">&quot;IsException&quot;</span><span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <em>UnixTimestampToDateTime</em> function, is an extension method of long included with the plugin. To use it don't forget to include the <strong>ImaginationOverflow.AndroidInstallReferrer.Helpers</strong> namespace.</p>
+</div>
+<h2 id="about-referrer-installs">About Referrer Installs<a class="headerlink" href="#about-referrer-installs" title="Permanent link">&para;</a></h2>
+<p>Referrer installs work by adding custom information to the Play Store URL, the Play Store app stores this information and relays them to the target app/game after it's opened. The play store URLs have the following template:</p>
+<div class="codehilite"><pre><span></span>https://play.google.com/store/apps/details?id=[APP/GAME_ID]
+</pre></div>
+
+<p>To add referral information you need to include on this store URL the <strong>referrer</strong> argument, this argument should be <a href="https://en.wikipedia.org/wiki/Percent-encoding">URL Encoded</a>.
+<div class="codehilite"><pre><span></span>https://play.google.com/store/apps/details?id=[APP/GAME_ID]&amp;referrer=[MY_ARGUMENTS]
+</pre></div></p>
+<p>Although you can add anything that you wish to these arguments, they usually contain <a href="https://en.wikipedia.org/wiki/UTM_parameters">Urchin Tracking Module parameters</a>, these are usually used for Google Analytics (and similar services) to track referral information automatically.</p>
+<p>Considering one of our games, Sudoku Zenkai as an example for referral link usage:</p>
+<div class="codehilite"><pre><span></span>Package ID: com.imaginationoverflow.sudokuzenkai
+Arguments: utm_source=imaginationoverflow.com&amp;utm_medium=docs&amp;puzzle=123
+Arguments Encoded: imaginationoverflow.com%26utm_medium%3Ddocs%26puzzle%3D123
+
+https://play.google.com/store/apps/details?id=com.imaginationoverflow.sudokuzenkai&amp;referrer=imaginationoverflow.com%26utm_medium%3Ddocs%26puzzle%3D123
+</pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Link generation</strong>, <strong>Link distribution</strong>, and <strong>Referral Tracking</strong> are out of this plugin scope, the plugin only purpose is to retrieve the information and give it to you, the plugin doesn't handle anything else not stated on this documentation.</p>
+</div>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<h3 id="editor">Editor<a class="headerlink" href="#editor" title="Permanent link">&para;</a></h3>
+<p>In the plugin, we included a quick and simple way for you to test the integration right from the Unity Editor. To use it go to Window -&gt; ImaginationOverflow -&gt; Deferred Deep Linking:</p>
+<p><img alt="logo" src="../imgs/ddl/debug.png" /></p>
+<p>A Debug window will popup where you can configure the arguments you wish to pass as referrer information:</p>
+<p><img alt="logo" src="../imgs/ddl/editordebugwin.png" /></p>
+<p>After you complete the integration with the Deferred Deep Linking plugin, simply run your project, and press the <strong>Debug</strong> button, the <strong>ReferrerInformationCollected</strong> will be triggered with the configured referrer information.</p>
+<p>The debug window contains a selectable label that allows you to preview how your links will look like once your app/game is on the store.</p>
+<h3 id="device">Device<a class="headerlink" href="#device" title="Permanent link">&para;</a></h3>
+<p>To test the plugin integration while developing you can use the google play store alpha or beta tracks, but if you wish to test without deploying your app to the play store you can test by changing your application package name to any currently available app/game on the Play Store, as an example, lets use one of our games Super Bunny Laser Spikes, which package name <strong>com.imaginationoverflow.superbunnylaserspikes</strong></p>
+<p><img alt="logo" src="../imgs/ddl/unitypackagename.png" /></p>
+<p>Then get your referral link ready:
+<div class="codehilite"><pre><span></span>https://play.google.com/store/apps/details?id<span class="o">=[</span>TARGET_PACKAGE_NAME<span class="o">]</span><span class="p">&amp;</span><span class="nv">referrer</span><span class="o">=[</span>YOUR_ARGUMENTS_URL_ENCODED<span class="o">]</span>
+
+URL Decoded arguments:
+<span class="nv">utm_source</span><span class="o">=</span>imaginationoverflow.com<span class="p">&amp;</span><span class="nv">utm_medium</span><span class="o">=</span>docs<span class="p">&amp;</span><span class="nv">myrandomargument</span><span class="o">=</span>0xdeadbeef
+
+Final Link
+https://play.google.com/store/apps/details?id<span class="o">=</span>com.imaginationoverflow.superbunnylaserspikes<span class="p">&amp;</span><span class="nv">referrer</span><span class="o">=</span>utm_source%3Dimaginationoverflow.com%26utm_medium%3Ddocs%26myrandomargument%3D0xdeadbeef
+</pre></div></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To encode/decode your arguments you can use on <strong>Unity</strong> the WWW.(EscapeURL/UnEscapeURL) methods, on standard .NET HttpUtility.(UrlEncode/UrlDecode) or this <a href="https://www.urlencoder.org/">online tool</a></p>
+</div>
+<p>On your device, make sure that the app isn't installed, and open the referral link, the play store should appear and the install button should be visible.</p>
+<p>Finally, install your app/game via <em>adb</em> or press Build and Run on the Unity Editor:</p>
+<div class="codehilite"><pre><span></span>adb install myAwesomeGame.apk
+</pre></div>
+
+<p>You should see the store page Install button changing to Open, press it and you will be able to see the referral information that you passed along on <strong>ReferrerInformationCollected</strong> event callback.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../universalfileassociation/" title="About" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                About
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 ImaginationOverflow
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://imaginationoverflow.com" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://twitter.com/ImaginationOver" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.facebook.com/imaginationoverflowpt/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://store.steampowered.com/developer/imaginationoverflow" class="md-footer-social__link fa fa-steam"></a>
+    
+      <a href="https://play.google.com/store/apps/dev?id=4645635746246236605" class="md-footer-social__link fa fa-android"></a>
+    
+      <a href="https://itunes.apple.com/us/developer/diogo-cardoso/id1294879672" class="md-footer-social__link fa fa-apple"></a>
+    
+      <a href="https://www.microsoft.com/en-us/search/shop?q=ImaginationOverflow" class="md-footer-social__link fa fa-windows"></a>
+    
+      <a href="https://discord.gg/5TYmJtY" class="md-footer-social__link fa fa-support"></a>
+    
+      <a href="mailto:contact@imaginationoverflow.com" class="md-footer-social__link fa fa-mail-reply"></a>
+    
+      <a href="https://www.linkedin.com/in/diogocardoso89/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+      <a href="https://www.patreon.com/imaginationoverflow/posts" class="md-footer-social__link fa fa-feed"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
