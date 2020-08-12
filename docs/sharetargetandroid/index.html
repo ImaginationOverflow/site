@@ -821,9 +821,13 @@
 <span class="p">{</span>
     <span class="n">ShareTargetManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">ShareActivated</span> <span class="p">+=</span> <span class="n">ShareActivated</span><span class="p">;</span>
 <span class="p">}</span>
+
+
+<span class="p">!!!</span> <span class="n">info</span>
+    <span class="n">Don</span><span class="err">&#39;</span><span class="n">t</span> <span class="n">forget</span> <span class="n">to</span> <span class="n">unregister</span> <span class="n">the</span> <span class="k">event</span> <span class="n">when</span> <span class="k">on</span> <span class="n">the</span> <span class="p">**</span><span class="n">OnDestroy</span><span class="p">**</span> <span class="n">Unity</span> <span class="k">event</span><span class="p">,</span> <span class="k">this</span> <span class="n">will</span> <span class="n">avoid</span> <span class="n">any</span> <span class="n">memory</span> <span class="n">leaks</span> <span class="k">on</span> <span class="n">your</span> <span class="n">apps</span><span class="p">/</span><span class="n">games</span><span class="p">.</span>
 </pre></div>
 
-<p>In the event handler you have access to all information about the shared content, this includes the type of share that was made (single or multiple), the mime type of the shared content and access to the shared file or files.</p>
+<p>In the event handler, you have access to all information about the shared content, this includes the type of share that was made (single or multiple), the mime type of the shared content, and access to the shared file or files.</p>
 <div class="codehilite"><pre><span></span><span class="k">private</span> <span class="k">void</span> <span class="nf">ShareActivated</span><span class="p">(</span><span class="n">IShareInformation</span> <span class="n">sharedInfo</span><span class="p">)</span>
 <span class="p">{</span>
         <span class="c1">//</span>
@@ -869,11 +873,7 @@
 <span class="p">}</span>
 </pre></div>
 
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Don't forget to unregister the event when on the <strong>OnDestroy</strong> Unity event, this will avoid any memory leaks on your apps/games.</p>
-</div>
-<p>The <strong>IShareInformation</strong> interface describes the basic contract for the information received when an user shares content to your app/game:</p>
+<p>The <strong>IShareInformation</strong> interface describes the basic contract for the information received when a user shares content to your app/game:</p>
 <div class="codehilite"><pre><span></span><span class="c1">/// &lt;summary&gt;</span>
 <span class="c1">/// Represents shared information</span>
 <span class="c1">/// &lt;/summary&gt;</span>
@@ -905,27 +905,27 @@
 <h2 id="configuring-the-plugin">Configuring the Plugin<a class="headerlink" href="#configuring-the-plugin" title="Permanent link">&para;</a></h2>
 <p>The plugin configuration interface is under <strong>Window</strong> -&gt; <strong>ImaginationOverflow</strong> -&gt; <strong>Share Target for Android</strong> -&gt; <strong>Configuration</strong>:</p>
 <p><img alt="Config" src="../imgs/stp/configwindow.png" /></p>
-<p>On the Configuration Window, you can setup if your app/game wants to receive multiple files on one share, by toogling on and off the <strong>Receive Multiple</strong>.</p>
+<p>On the Configuration Window, you can set up if your app/game wants to receive multiple files on one share, by toggling on and off the <strong>Receive Multiple</strong>.</p>
 <p>You can configure the shares that you want to receive by configuring the <em>Mime Type</em> or the <em>Custom file extension</em> sections. </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>For a list of valid mime types please refer to the <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">IANA official</a> registry of MIME media types. </p>
 </div>
-<p>You can also use an wildcard (<strong>*</strong>) to support a full category of mime types, just as we see in the configuration above where we want to receive all files that are on the <em>text</em>, <em>image</em> and <em>video</em> categories. The last mime type configuration states that the app/game only wants to receive <strong>audio/ogg</strong> so no other audio files will be matched to activate the app besides the <strong>.ogg</strong> ones.</p>
+<p>You can also use a wildcard (<strong>*</strong>) to support a full category of mime types, just as we see in the configuration above where we want to receive all files that are on the <em>text</em>, <em>image</em>, and <em>video</em> categories. The last mime type configuration states that the app/game only wants to receive <strong>audio/ogg</strong> so no other audio files will be matched to activate the app besides the <strong>.ogg</strong> ones.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If your app/game can handle any file of any type, you only need to register one mimetype <strong>*/*</strong></p>
 </div>
-<p>Finally the custom file section, allows you to register to receive shares from files with custom extensions, in the example above, the app/game would appear as an option when the user tries to share files that have the <strong>.mycustomextension</strong> and <strong>.myotherextension</strong>. (e.g file1.mycustomextension or file2.myotherextension).</p>
+<p>Finally, the custom file section, allows you to register to receive shares from files with custom extensions, in the example above, the app/game would appear as an option when the user tries to share files that have the <strong>.mycustomextension</strong> and <strong>.myotherextension</strong>. (e.g file1.mycustomextension or file2.myotherextension).</p>
 <h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
 <p>The plugin includes a builtin testing window that allows you to test the integration without deploying your game to a device.</p>
 <h3 id="editor">Editor<a class="headerlink" href="#editor" title="Permanent link">&para;</a></h3>
 <p>The debug window is accessible under <strong>Window</strong> -&gt; <strong>ImaginationOverflow</strong> -&gt; <strong>Share Target for Android</strong> -&gt; <strong>Debug</strong>
 <img alt="Config" src="../imgs/stp/debugpath.png" /></p>
-<p>The editor debug window allows you to test every possible scenario that the plugin supports regarding sharing to the app/game, in order to test you need to fill out the <em>File Type</em> and add at least one <em>file</em> or <em>text</em> content. The last requirement to test on the editor is that your app/game should be running, after all the conditions are met the <strong>Debug</strong> button will be interactable and if already integrated your project with the Share Target plugin the <strong>ShareActivated</strong> event should trigger.</p>
+<p>The editor debug window allows you to test every possible scenario that the plugin supports regarding sharing to the app/game, in order to test you need to fill out the <em>File Type</em> and add at least one <em>file</em> or <em>text</em> content. The last requirement to test on the editor is that your app/game should be running after all the conditions are met the <strong>Debug</strong> button will be interactable and if already integrated your project with the Share Target plugin the <strong>ShareActivated</strong> event should trigger.</p>
 <p><img alt="Config" src="../imgs/stp/debugwindow.png" /></p>
 <h3 id="android">Android<a class="headerlink" href="#android" title="Permanent link">&para;</a></h3>
-<p>On an actual device, depending on the mime types that your app support, you can either use a file explorer or simply an app that shares the content that you expect to receive on your app/game, after you press share your application should appear as an option on the native share dialog:</p>
+<p>On an actual device, depending on the mime types that your app support, you can either use a file explorer or simply an app that shares the content that you expect to receive on your app/game after you press share your application should appear as an option on the native share dialog:</p>
 <p><img alt="Config" src="../imgs/stp/android.png" /></p>
 <p>The image above ilustrates exactly that case, on your testing your app icon and app name will appear instead of the Share Target plugin image and name.</p>
                 
