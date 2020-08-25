@@ -821,12 +821,12 @@
 <span class="p">{</span>
     <span class="n">ShareTargetManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">ShareActivated</span> <span class="p">+=</span> <span class="n">ShareActivated</span><span class="p">;</span>
 <span class="p">}</span>
-
-
-<span class="p">!!!</span> <span class="n">info</span>
-    <span class="n">Don</span><span class="err">&#39;</span><span class="n">t</span> <span class="n">forget</span> <span class="n">to</span> <span class="n">unregister</span> <span class="n">the</span> <span class="k">event</span> <span class="n">when</span> <span class="k">on</span> <span class="n">the</span> <span class="p">**</span><span class="n">OnDestroy</span><span class="p">**</span> <span class="n">Unity</span> <span class="k">event</span><span class="p">,</span> <span class="k">this</span> <span class="n">will</span> <span class="n">avoid</span> <span class="n">any</span> <span class="n">memory</span> <span class="n">leaks</span> <span class="k">on</span> <span class="n">your</span> <span class="n">apps</span><span class="p">/</span><span class="n">games</span><span class="p">.</span>
 </pre></div>
 
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Don't forget to unregister the event when on the <strong>OnDestroy</strong> Unity event, this will avoid any memory leaks on your apps/games.</p>
+</div>
 <p>In the event handler, you have access to all information about the shared content, this includes the type of share that was made (single or multiple), the mime type of the shared content, and access to the shared file or files.</p>
 <div class="codehilite"><pre><span></span><span class="k">private</span> <span class="k">void</span> <span class="nf">ShareActivated</span><span class="p">(</span><span class="n">IShareInformation</span> <span class="n">sharedInfo</span><span class="p">)</span>
 <span class="p">{</span>
