@@ -10,6 +10,10 @@
 				"appID": "5DVD99WQGR.com.imaginationoverflow.test",
 				"paths": [ "*"]
 			},
+			{
+				"appID": "5DVD99WQGR.com.imaginationoverflow.testdomain",
+				"paths": [ "*"]
+			},
 		]
 	}
 }
