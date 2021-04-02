@@ -11,6 +11,10 @@
 				"paths": [ "*"]
 			},
 			{
+				"appID": "GH45T6Y24L.com.imaginationoverflow.testdomain",
+				"paths": [ "*"]
+			},
+			{
 				"appID": "5DVD99WQGR.com.imaginationoverflow.testdomain",
 				"paths": [ "*"]
 			},
