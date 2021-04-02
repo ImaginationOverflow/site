@@ -3,6 +3,9 @@
 		"apps": [],
 		"details": [
 			{
+				"appIDs": [ "GH45T6Y24L.com.imaginationoverflow.testdomain", "5DVD99WQGR.com.imaginationoverflow.testdomain" ],
+			},
+			{
 				"appID": "5DVD99WQGR.com.imaginationoverflow.superbunnylaserspikes",
 				"paths": [ "*"]
 			},
