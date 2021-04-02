@@ -5,7 +5,11 @@
 			{
 				"appID": "5DVD99WQGR.com.imaginationoverflow.superbunnylaserspikes",
 				"paths": [ "*"]
-			}
+			},
+			{
+				"appID": "5DVD99WQGR.com.imaginationoverflow.test",
+				"paths": [ "*"]
+			},
 		]
 	}
 }
