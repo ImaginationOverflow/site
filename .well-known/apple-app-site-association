@@ -4,19 +4,19 @@
 		"details": [
 			{
 				"appID": "5DVD99WQGR.com.imaginationoverflow.superbunnylaserspikes",
-				"paths": [ "*"]
+				"paths": [ "*" ]
 			},
 			{
 				"appID": "5DVD99WQGR.com.imaginationoverflow.test",
-				"paths": [ "*"]
+				"paths": [ "*" ]
 			},
 			{
 				"appID": "GH45T6Y24L.com.imaginationoverflow.testdomain",
-				"paths": [ "*"]
+				"paths": [ "*" ]
 			},
 			{
 				"appID": "5DVD99WQGR.com.imaginationoverflow.testdomain",
-				"paths": [ "*"]
+				"paths": [ "*" ]
 			}
 		]
 	}
