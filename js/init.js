@@ -146,7 +146,12 @@
       var contactSubject = $('#contactForm #contactSubject').val();
       var contactMessage = $('#contactForm #contactMessage').val();
 
-	  contactMessage = contactMessage.replace("\n", "</br>");
+
+	var honey = $('#contactForm #phonenumber').val();
+
+	
+	
+    contactMessage = contactMessage.replace("\n", "</br>");
 
 	$('#message-warning').fadeIn();
 	$('#message-warning').hide();
@@ -155,6 +160,16 @@
 	  {
 		  printContactError("All the fields are mandatory.");
 		  return false;
+	  }
+	  
+	  
+	  if(honey)
+	  {
+		  $('#image-loader').fadeOut();
+			$('#message-warning').hide();
+			$('#contactForm').fadeOut();
+			$('#message-success').fadeIn();   
+			return false;
 	  }
 	  
 	  var params = {
