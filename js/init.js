@@ -178,6 +178,17 @@
 			message: contactMessage,
 			subject: contactSubject
 		};
+		
+		if(contactMessage.length <= 50)
+		{
+			
+					$('#image-loader').fadeOut();
+			$('#message-warning').hide();
+			$('#contactForm').fadeOut();
+			$('#message-success').fadeIn();  
+			return false;
+		}
+		
 	  emailjs.send("gmail","template_ISnGsErl",params)
 		.then(function(response) 
 		{
