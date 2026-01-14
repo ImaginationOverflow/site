@@ -179,7 +179,7 @@
 			subject: contactSubject
 		};
 		
-		if(contactMessage.length <= 50)
+		if(contactMessage.length <= 31)
 		{
 			
 					$('#image-loader').fadeOut();
