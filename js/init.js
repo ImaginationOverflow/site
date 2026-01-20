@@ -189,7 +189,7 @@
 			return false;
 		}
 		
-	  emailjs.send("gmail","template_ISnGsErl",params)
+	  emailjs.send("gmail","mysuperid",params)
 		.then(function(response) 
 		{
 			$('#image-loader').fadeOut();
